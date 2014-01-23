@@ -2,17 +2,22 @@
  
 ##Learning Competencies 
 
+* Identify and implement classes based on real world requirements
+* Use the model-view-controller pattern to organize code and decouple concerns
+* Model relationships in a relational database (one-to-one, one-to-many, many-to-many)
+* Use Active Record Migrations to create a database
+* Use Active Record Queries to query a database
+* Use Active Record to create Associations between database tables
+
 ##Summary 
 
- We're going to work with some [Sunlight Labs](http://sunlightlabs.com/) data again. This time, however, we're going to model things using ActiveRecord instead of plain old SQL.
+We're going to work with some [Sunlight Labs](http://sunlightlabs.com/) data again. This time, however, we're going to model things using ActiveRecord instead of plain old SQL.
 
 The data can be found in the `db/data/legislators.csv` file, but can also be viewed [here](https://raw.github.com/dbc-challenges/ar-sunlight-legislators/master/db/data/legislators.csv).
 
-Using `git`, commit early and commit *often*. You should be able to point a reviewer at a `git` SHA to show them any completed objective.
+##Releases
 
-## Objectives
-
-### Create your models and migrations
+###Release 0 : Create your models and migrations
 
 Looking at the data, figure out what is the best way to model it. Consider the following requirements:
 
@@ -30,7 +35,7 @@ Remember, models belong in the `app/models` folder and should be named as singul
 Can you test your data?  Are your validations working?  Try some edge cases.
 
 
-### Scrub and import the data
+###Release 1 : Scrub and import the data
 
 Now that you've finished modeling the data using ActiveRecord models, you need to import the data. We've stubbed out the outline of a class that should be able to handle the import. It can be found in the `lib/sunlight_legislators_importer.rb` file. The hooks for the work you need to do can be found between the block that looks like this:
 
@@ -44,7 +49,7 @@ Don't bother importing any fields that won't be used and be sure that you proper
 
 How will you run your importer?  Is this a "one-off" task?  Refer to previous challenges like AR Student Schema if you get lost on this.
 
-### Write some ActiveRecord queries
+###Release 2 : Write some ActiveRecord queries
 
 Write some ruby that uses [ActiveRecord queries](http://guides.rubyonrails.org/active_record_querying.html) to handle the requirements as specified below. It's probably best to store your code in a simple ruby script, perhaps in `app/main.rb`. Since these are really just one-off pieces of code you're writing, don't worry too much about structure.
 
@@ -93,9 +98,8 @@ Write some ruby that uses [ActiveRecord queries](http://guides.rubyonrails.org/a
     Representatives: 435
     ``` 
 
-##Releases
-###Release 0 
-
-##Optimize Your Learning 
+<!-- ##Optimize Your Learning  -->
 
 ##Resources
+
+* [ActiveRecord queries](http://guides.rubyonrails.org/active_record_querying.html)
