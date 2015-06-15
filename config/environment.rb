@@ -46,3 +46,8 @@ ActiveRecord::Base.establish_connection(database_config)
 
 # Establish connection between models and tables
 ActiveRecord::Base.connection
+
+
+# Require files in app/views and app/controllers
+Dir[APP_ROOT.join('app', 'views', '*.rb')].each { |file| require file }
+Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
