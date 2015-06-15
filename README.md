@@ -16,6 +16,7 @@ For a given political party ...
 - obtain a list of legislators affiliated with the party.
 - obtain a list of representatives affiliated with the party.
 - obtain a list of senators affiliated with the party.
+- obtain a list of legislators currently in office
 
 For a given legislator ...
 - obtain a list of attributes:
@@ -59,7 +60,9 @@ With our models and database built and our legislator data in the database, let'
 
 
 ## Conclusion
-Sum up the challenge.
+This challenge forces us to apply a lot of what we're learning at Dev Bootcamp: how to organize our code, schema design, Active Record, etc.  It's also more open-ended than some of the other challenges.  We've been given a description of an application, and we've had to build it, making almost all of the decisions along the way.
+
+How did that feel?  Did we know when to apply a concept?  Did we struggle with how to approach a problem?  Or how to implement a decision?  Take a minute to reflect on this challenge.  What did we do well?  Where could we use improvement?
 
 
 [Sunlight Foundation]: https://sunlightfoundation.com/
