@@ -54,6 +54,9 @@ A `SunlightLegislatorsImporter` module is provided in the file `lib/sunlight_leg
 
 A `db/seeds.rb` file has been provided that calls this `.import` method.  Once we've defined the method, we can run the `db:seed` rake task to seed our database with the legislator data.  Before we try to seed our database, can we know whether or not our importer is working as we expect?
 
+### Release 2: Build the User Interface
+With our models and database built and our legislator data in the database, let's proceed to creating the user interface.  Looking at our requirements, what information will we need to collect from users?  How will provide this information?  What is responsible for interpreting that input?  What is responsible for acting on the information?  What is responsible for making data presentable to users?
+
 
 ## Conclusion
 Sum up the challenge.
