@@ -31,14 +31,20 @@ For a given legislator ...
 - determine whether the legislator is currently in office.
 
 
-##Releases
+## Releases
 
-### Pre-release: Description
-If necessary ...
+### Pre-release: Running Your Application
+Take a minute to get acquainted with the provided code base.  When we run our application, we'll execute the `runner.rb` file.  This file requires another file, `config/environment.rb`, that more-or-less requires everything else we'll need.
+
+Before moving on, let's bundle and create our database.
 
 
-### Release 0: Description
-What should students do?
+### Release 0: Models and Migrations
+We'll begin this challenge by reflecting on the requirements described in the *Summary*, determining the models we'll need, and determining the design of the database that backs up the models.
+
+After making a decision about what we need, we'll need to implement our decision.  Create the models, write and run the migrations, etc.
+
+What makes our models valid or not?  How will we know whether or not our models behave as expected?
 
 
 ### Release 1: Description
