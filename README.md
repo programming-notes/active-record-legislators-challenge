@@ -58,6 +58,34 @@ A `db/seeds.rb` file has been provided that calls this `.import` method.  Once w
 ### Release 2: Build the User Interface
 With our models and database built and our legislator data in the database, let's proceed to creating the user interface.  Looking at our requirements, what information will we need to collect from users?  How will provide this information?  What is responsible for interpreting that input?  What is responsible for acting on the information?  What is responsible for making data presentable to users?
 
+This release is complete when a user can access all of the data described in the requirements.  For example, a user should be able to specify a state and see a list off all legislators from that state.
+
+
+### Release 3:  Update Listing Legislators
+```
+Senators:
+  Barbara Boxer (D)
+  Diane Feinstein (D)
+Representatives:
+  Xavier Becerra (D)
+  Howard L. Berman (D)
+  Brian P. Bilbray (R)
+  
+  list continues ...
+```
+*Figure 1*.  Example output for displaying a list of legislators from a given state.
+
+Our application is now working as originally described, but we need to make an update.  We want a specific format for the display our list of legislators from a given state (see Figure 1):
+
+- Display only active legislators.
+- Senators should be listed before representatives.
+- Alphabetize the lists of senators and representatives by last name.
+- Identify legislators by party.
+
+As we make this change, reflect on what changes we're making?  Which parts of our application are effected by this change?  Do seemingly unrelated parts of our application need to change?
+
+In deciding how to implement this change, what parts of our program know how legislators are marked as active or not?  How do we order legislators by last name?  Take time to think through what we're doing and why we're making each decision.
+
 
 ## Conclusion
 This challenge forces us to apply a lot of what we're learning at Dev Bootcamp: how to organize our code, schema design, Active Record, etc.  It's also more open-ended than some of the other challenges.  We've been given a description of an application, and we've had to build it, making almost all of the decisions along the way.
