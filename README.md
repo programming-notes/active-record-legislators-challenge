@@ -5,6 +5,11 @@ This challenge is a fairly comprehensive reflection of our understanding of and 
 
 We'll be given a list of required functionality for our application, but it's up to us to figure out how to build out that functionality.  What tables should our database have?  What models do we need?  What are the relationships between our classes?  What about views and controllers?  How will we get input from users?  We'll need to make and implement all of these decision ourselves.
 
+
+### Active Record Query Interface
+We should be familiar now with some of the more common Active Record queries: `.all`, `.find`, `.where`, etc.  In completing this challenge, we'll likely want to be familiar with how to use [Active Record's query interface][AR Query Interface] for filtering, sorting, etc. as well as some other techniques for loading objects.  For example, we can [load an object with its associated objects][Eager Loading].  We can define [scopes][Scopes] or class methods to provide an interface for other objects to ask for subsets of a class's records.  If we're unsure whether or not a record might already exist in the database, we can first [try to find it and then build/create it if it's not there][Find or Build].  There are powerful features built into Active Record; we need to build familiarity with them.
+
+
 ### Required Functionality
 
 For a given state ...
@@ -109,4 +114,9 @@ This challenge forces us to apply a lot of what we're learning at Dev Bootcamp: 
 How did that feel?  Did we know when to apply a concept?  Did we struggle with how to approach a problem?  Or how to implement a decision?  Take a minute to reflect on this challenge.  What did we do well?  Where could we use improvement?
 
 
+[AR Query Interface]: http://guides.rubyonrails.org/active_record_querying.html
+[Eager Loading]: http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations
+[Find or Build]: http://guides.rubyonrails.org/active_record_querying.html#find-or-build-a-new-object
+[Scopes]: http://guides.rubyonrails.org/active_record_querying.html#scopes
 [Sunlight Foundation]: https://sunlightfoundation.com/
+
