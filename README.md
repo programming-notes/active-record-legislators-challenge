@@ -87,6 +87,22 @@ As we make this change, reflect on what changes we're making?  Which parts of ou
 In deciding how to implement this change, what parts of our program know how legislators are marked as active or not?  How do we order legislators by last name?  Take time to think through what we're doing and why we're making each decision.
 
 
+### Release 4: List States with Legislator Count
+```
+CA: 2 Senators, 53 Representative(s)
+TX: 2 Senators, 32 Representative(s)
+NY: 2 Senators, 29 Representative(s)
+
+list continues ...
+```
+*Figure 2.*  Example output for a list of states and their legislator counts.
+
+Let's add a new feature to our application.  We want to display a list of all states along with the count of their legislators (see Figure 2):
+
+- The states should be ordered by number of legislators.
+- For each state, display the counts of senators and representatives.
+
+
 ## Conclusion
 This challenge forces us to apply a lot of what we're learning at Dev Bootcamp: how to organize our code, schema design, Active Record, etc.  It's also more open-ended than some of the other challenges.  We've been given a description of an application, and we've had to build it, making almost all of the decisions along the way.
 
