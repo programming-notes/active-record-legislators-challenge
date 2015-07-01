@@ -60,16 +60,16 @@ namespace :db do
     system "bundle exec rake db:migrate AR_ENV=test" unless ENV['AR_ENV'] == 'test'
   end
 
-  desc "rollback your migration--use STEPS=number to step back multiple times"
+  desc "rollback your migration--use STEP=number to step back multiple times"
   task :rollback do
-    number_of_steps = (ENV['STEPS'] || 1).to_i
+    number_of_steps = (ENV['STEP'] || 1).to_i
     ActiveRecord::Migrator.rollback('db/migrate', number_of_steps)
 
     # Run the db:version rake task
     Rake::Task['db:version'].invoke if Rake::Task['db:version']
 
     # Roll back migrations for the test database
-    system "bundle exec rake db:rollback AR_ENV=test" unless ENV['AR_ENV'] == 'test'
+    system "bundle exec rake db:rollback STEP=#{number_of_steps} AR_ENV=test" unless ENV['AR_ENV'] == 'test'
   end
 
 
