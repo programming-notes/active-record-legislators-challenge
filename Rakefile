@@ -5,8 +5,8 @@ require 'active_support/core_ext'
 # Require the files in APP_ROOT/lib
 lib_files = Dir[APP_ROOT.join('lib', '*.rb')]
 
-lib_files.each do |model_file|
-  require model_file
+lib_files.each do |file|
+  require file
 end
 
 
